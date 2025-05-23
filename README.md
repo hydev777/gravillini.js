@@ -1,5 +1,7 @@
 # gravillini.js
 
+![image](https://github.com/user-attachments/assets/fbbc3fa2-464c-4709-a94d-395f7f9e684d)
+
 Gravillini es una micro-librería de UI escrita en JavaScript puro. Permite crear componentes con estado y renderizar interfaces de forma sencilla y reactiva, sin necesidad de React.
 
 ### ✨ Características
