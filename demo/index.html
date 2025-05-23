@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gravillini Demo</title>
+</head>
+<body>
+  <div id="pantalla"></div>
+  <script type="module">
+    import { g, chispa, iniciar } from '../src/gravillini.js';
+
+    function Contador() {
+      const [cuenta, ponerCuenta] = chispa(0);
+
+      return g("div", { estilo: { textAlign: "center", marginTop: "50px" } },
+        g("h2", null, "Contador Gravillini 🎯"),
+        g("p", null, `Cuenta: ${cuenta()}`),
+        g("button", { alClick: () => ponerCuenta(cuenta() + 1) }, "Sumar +1")
+      );
+    }
+
+    iniciar(Contador, document.getElementById("pantalla"));
+  </script>
+</body>
+</html>
